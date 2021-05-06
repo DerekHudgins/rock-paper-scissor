@@ -18,9 +18,9 @@ confrimChoice.addEventListener('click', () =>{
     const checkRadioButton = document.querySelector(':checked');
     const userGuess = checkRadioButton.value;
 
-    if (userGuess === randomGuess) {
+    if (rockPaperScissor(userGuess, randomGuess) === 'draw') {
         draw++;
-        totalLoss.textContent = draw;
+        totalDraw.textContent = draw;
     } else if (rockPaperScissor(userGuess, randomGuess) === 'win') {
         wins++;
         totalWins.textContent = wins;
