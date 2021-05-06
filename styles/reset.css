@@ -6,6 +6,7 @@
 
 *{
     box-sizing: border-box;
+	background-color: lightblue;
 }
 
 html, body {
@@ -34,6 +35,3 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-ol, ul {
-	list-style: none;
-}

@@ -20,13 +20,13 @@ confrimChoice.addEventListener('click', () =>{
 
     if (rockPaperScissor(userGuess, randomGuess) === 'draw') {
         draw++;
-        totalDraw.textContent = draw;
+        totalDraw.textContent = `draw ${draw} `;
     } else if (rockPaperScissor(userGuess, randomGuess) === 'win') {
         wins++;
-        totalWins.textContent = wins;
+        totalWins.textContent = `wins ${wins}`;
     } else if (rockPaperScissor(userGuess, randomGuess) === 'lose') {
         loss++;
-        totalLoss.textContent = loss;
+        totalLoss.textContent = `loss ${loss} `;
     }
 });    
 
