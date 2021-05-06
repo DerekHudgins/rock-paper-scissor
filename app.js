@@ -1,16 +1,16 @@
 // import functions and grab DOM elements
-import {getRandomThrow, rockPaperScissor} from './utils.js';
+import { getRandomThrow, rockPaperScissor } from './utils.js';
 
 const confrimChoice = document.querySelector('#confirm-btn');
-const currentResult = document.querySelector('#current-result');
 const totalWins = document.querySelector('#total-wins');
 const totalLoss = document.querySelector('#total-loss');
+const totalDraw = document.querySelector('#total-draw');
 
 // initialize state
 let wins = 0;
 let loss = 0;
 let draw = 0;
-let playTotal = 0;
+
 // set event listeners 
 confrimChoice.addEventListener('click', () =>{
   // get user input
@@ -20,7 +20,7 @@ confrimChoice.addEventListener('click', () =>{
 
     if (userGuess === randomGuess) {
         draw++;
-        currentResult.textContent = draw;
+        totalLoss.textContent = draw;
     } else if (rockPaperScissor(userGuess, randomGuess) === 'win') {
         wins++;
         totalWins.textContent = wins;
