@@ -5,6 +5,7 @@ const confrimChoice = document.querySelector('#confirm-btn');
 const totalWins = document.querySelector('#total-wins');
 const totalLoss = document.querySelector('#total-loss');
 const totalDraw = document.querySelector('#total-draw');
+const resetBtn = document.querySelector('#reset-btn');
 
 // initialize state
 let wins = 0;
@@ -30,6 +31,9 @@ confrimChoice.addEventListener('click', () =>{
     }
 });    
 
+resetBtn.addEventListener('click', () =>{  
+    location.reload();
+});
 
   // use user input to update state 
 
