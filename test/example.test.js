@@ -1,6 +1,8 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
+import { rockPaperScissor } from "../utils.js";
+
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
@@ -14,5 +16,5 @@ test('time to test a function', (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(rockPaperScissor, expected);
 });
