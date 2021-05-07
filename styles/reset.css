@@ -6,7 +6,9 @@
 
 *{
     box-sizing: border-box;
-	background-color: lightblue;
+	background-color: darkblue;
+	color: red;
+	font-family: fantasy;
 }
 
 html, body {
